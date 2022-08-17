@@ -1,0 +1,149 @@
+.diferencial-home-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0 80px var(--w), inset 0 -80px var(--w);
+}
+
+.diferencial-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.escrita-diferencial {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  padding-right: 2rem;
+}
+
+.diferencial-home .tec {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--c5);
+  padding-block: 1.25rem 1.25rem;
+}
+
+.diferencial-home h2 {
+  color: var(--w);
+  position: relative;
+}
+
+.diferencial-home .ponto::before {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/dec/bottom-left.svg);
+  width: 3.25rem;
+  height: 3.25rem;
+  bottom: -32.5rem;
+  left: -5rem;
+}
+
+.diferencial-home .texto {
+  padding-block: 2rem 2rem;
+}
+
+.vantagens-titulo {
+  width: max-content;
+}
+
+.diferencial-home .vantagens-titulo {
+  font: var(--medium) var(--s24) / 1.33 var(--tg1);
+  color: var(--p1);
+  border-bottom: 0.25rem solid var(--p1);
+}
+
+.diferencial-home .vantagens {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+
+.diferencial-home .vantagens-titulo {
+  color: var(--w);
+  width: max-content;
+}
+
+.diferencial-home .vantagens-subtitulo {
+  font: var(--regular) var(--s16) / 1.5 var(--tg2);
+  color: var(--c5);
+  padding-top: 1rem;
+}
+
+.motor-home {
+  position: relative;
+}
+
+.motor-home span::before {
+  content: "";
+  background-image: url(/assets/icones/elétrico.svg);
+  background-repeat: no-repeat;
+  height: 3.25rem;
+  width: 3.25rem;
+  position: absolute;
+  top: -1.8rem;
+}
+.rastreador-home {
+  position: relative;
+}
+.rastreador-home span::before {
+  content: "";
+  background-image: url(/assets/icones/rastreador.svg);
+  background-repeat: no-repeat;
+  height: 3.25rem;
+  width: 3.25rem;
+  position: absolute;
+  top: -1.8rem;
+}
+
+.diferencial-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media (max-width: 1200px) {
+  .diferencial-home h2 {
+    font-size: 3rem;
+  }
+
+  .escrita-diferencial .tec {
+    font-size: var(--s18);
+    letter-spacing: 1.5px;
+  }
+  .escrita-diferencial .texto {
+    font-size: var(--s24);
+  }
+}
+
+@media (max-width: 900px) {
+  .escrita-diferencial {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+  }
+
+  .diferencial-home h2 {
+    font-size: 2rem;
+  }
+  .diferencial-home {
+    grid-template-columns: 1fr;
+  }
+  .diferencial-foto img {
+    display: none;
+  }
+  .diferencial-home-bg {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .diferencial-home h2 {
+    font-size: 1.5rem;
+  }
+  .diferencial-home .vantagens {
+    padding-top: 3.5rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .diferencial-home .motor-home {
+    margin-bottom: 1rem;
+  }
+}

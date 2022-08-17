@@ -1,0 +1,162 @@
+.bike-inter-bg {
+  background-color: var(--c11);
+}
+
+.bicicletas-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.bicicletas-imagens img {
+  flex: 1;
+  min-width: 12.5rem;
+  border-radius: 0.3125rem;
+}
+
+.bicicletas-imagens img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-interna {
+  padding-bottom: 3.75rem;
+  position: relative;
+}
+
+.bicicleta-interna > span {
+  display: block;
+  font: var(--medium) var(--s36) / 1.33 var(--tg2);
+  color: var(--c5);
+  padding-top: 3.75rem;
+}
+
+.bicicleta-interna h1 {
+  color: var(--w);
+  padding-bottom: 3.75rem;
+}
+.bicicleta-interna h1::before {
+  position: absolute;
+  content: "";
+  width: 3.25rem;
+  height: 3.25rem;
+  background-image: url(/assets/dec/bottom-left.svg);
+  left: -3rem;
+  bottom: 1rem;
+}
+
+.introducao-bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.nimbus-texto > p {
+  padding-bottom: 2rem;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  justify-items: start;
+}
+
+.bicicleta-comprar a {
+  grid-row: span 2;
+}
+
+.bicicleta-comprar span {
+  font: var(--medium) var(--s12) / 1.33 var(--tg1);
+  color: var(--c6);
+  display: flex;
+  align-items: center;
+  background-color: var(--c12);
+  padding: 4px 8px;
+  gap: 4px;
+  border-radius: 0.3125rem;
+}
+
+.nimbus-texto h2 {
+  font: var(--medium) var(--s12) / 1.33 var(--tg1);
+  letter-spacing: 0.09375rem;
+  color: var(--w);
+  padding-block: 2.5rem 0.75rem;
+}
+
+.bicicletas-informacoes,
+.bicicletas-fichatecnica {
+  padding: 32px;
+  background-color: var(--c12);
+  border-radius: 0.3125rem;
+}
+
+.bicicletas-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.bicicletas-informacoes img {
+  width: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bicicletas-informacoes h3 {
+  font: var(--medium) var(--s18) / 1.33 var(--tg1);
+  color: var(--w);
+  margin-bottom: 0.5rem;
+}
+
+.bicicletas-informacoes p {
+  font: var(--regular) var(--s14) / 1.42 var(--tg2);
+  color: var(--c5);
+}
+
+.bicicletas-fichatecnica {
+  font: var(--medium) var(--s16) / 1.5 var(--tg2);
+  color: var(--c4);
+}
+
+.bicicletas-fichatecnica span {
+  color: var(--c6);
+}
+
+.bicicletas-fichatecnica li {
+  padding: 0.25rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c11);
+}
+
+.bicicletas-fichatecnica li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-interna h1 {
+    font-size: 3rem;
+  }
+  .bicicleta-interna > span {
+    font-size: 1.75rem;
+  }
+  .bicicleta-interna h1 {
+    padding-bottom: 2.5rem;
+  }
+  .introducao-bicicletas {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-imagens {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .bicicletas-informacoes {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-comprar {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,17 @@
+.footer-inter {
+  position: relative;
+}
+
+.backg-inter {
+  content: "";
+  position: absolute;
+  top: -14rem;
+  background-color: var(--c12);
+  width: 100%;
+  height: 20rem;
+  z-index: -1;
+}
+
+.inter {
+  padding-top: 0rem;
+}

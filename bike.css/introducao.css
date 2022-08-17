@@ -1,0 +1,38 @@
+.introducao-bike-bg {
+  background-color: var(--c11);
+}
+
+.introducao-bike {
+  padding-block: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.introducao-bike p {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--c5);
+  padding-bottom: 0.5rem;
+}
+
+.introducao-bike h1 {
+  font: var(--semibold) var(--s64) / 1.125 var(--tg1);
+  color: var(--w);
+}
+
+.introducao-bike h1::after {
+  content: ".";
+  color: var(--p1);
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .introducao-bike {
+    padding-block: 1.5rem;
+  }
+  .introducao-bike p {
+    font-size: var(--s16);
+  }
+  .introducao-bike h1 {
+    font-size: 2.5rem;
+  }
+}

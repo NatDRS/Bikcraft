@@ -1,0 +1,104 @@
+.depoimento-home {
+  background-color: var(--p1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  overflow: hidden;
+}
+
+.depoimento-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.escrita-depoimento {
+  align-self: end;
+  padding-block: 3rem 1.5rem;
+  padding-inline: 5rem 2rem;
+  position: relative;
+}
+
+.depoimento-home p {
+  font: 900 var(--s36) / 1.33 "Merriweather", serif;
+  color: var(--p5);
+}
+
+.escrita-depoimento p::before,
+.escrita-depoimento p::after {
+  position: absolute;
+  font-size: 5rem;
+  color: var(--p2);
+}
+
+.escrita-depoimento p::before {
+  content: "“";
+  top: 1rem;
+  left: 1.8rem;
+}
+
+.escrita-depoimento p::after {
+  content: "”";
+  bottom: 3rem;
+}
+
+.depoimento-home span {
+  font: var(--semibold) var(--s24) / 1.33 var(--tg1);
+  color: var(--p4);
+  display: block;
+  padding-block: 2rem 2rem;
+}
+
+.depoimento-home span::before,
+.depoimento-home span::after {
+  content: "";
+  height: 3.25rem;
+  width: 3.25rem;
+  position: absolute;
+}
+
+.depoimento-home span::before {
+  background-image: url(/assets/dec/top-left-p.svg);
+  top: -10rem;
+  right: 38rem;
+}
+
+.depoimento-home span::after {
+  background-image: url(/assets/dec/bottom-right-p.svg);
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .depoimento-imagem img {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento-home {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .depoimento-imagem {
+    max-height: 12.5rem;
+  }
+  .escrita-depoimento {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+
+  .escrita-depoimento p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  .escrita-depoimento span {
+    font-size: 1.3rem;
+  }
+  .depoimento-home span::before {
+    display: none;
+  }
+  .escrita-depoimento p::before {
+    top: 1rem;
+    left: 0.8rem;
+  }
+}

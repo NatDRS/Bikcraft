@@ -1,0 +1,33 @@
+.introducao-terms-bg {
+  background-color: var(--c11);
+}
+
+.introducao-terms {
+  padding-block: 3.75rem;
+}
+
+.introducao-terms p {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--c5);
+}
+
+.terms-titulo {
+  color: var(--w);
+}
+
+.terms-titulo::after {
+  content: ".";
+  color: var(--p1);
+}
+
+@media (max-width: 800px) {
+  .introducao-terms {
+    padding-block: 2.5rem;
+  }
+  .introducao-terms p {
+    font-size: var(--s16);
+  }
+  .terms-titulo {
+    font-size: 2.5rem;
+  }
+}

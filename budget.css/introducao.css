@@ -1,0 +1,48 @@
+.budget-intro-bg {
+  background-color: var(--c11);
+}
+
+.introducao-budget {
+  padding-block: 3.75rem;
+  position: relative;
+}
+
+.introducao-budget h1 {
+  color: var(--w);
+}
+.introducao-budget h1::before,
+.introducao-budget h1::after {
+  content: "";
+  position: absolute;
+  width: 3.25rem;
+  height: 3.25rem;
+  background-repeat: no-repeat;
+}
+
+.introducao-budget h1::before {
+  background-image: url(/assets/dec/top-right.svg);
+  right: 1.5rem;
+  top: 3.75rem;
+}
+.introducao-budget h1::after {
+  background-image: url(/assets/dec/bottom-left.svg);
+  left: 3rem;
+  top: 65rem;
+}
+
+.introducao-budget p {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--c5);
+}
+
+@media (max-width: 800px) {
+  .introducao-budget h1 {
+    font-size: 2.5rem;
+  }
+  .introducao-budget p {
+    font-size: var(--s16);
+  }
+  .introducao-budget h1::after {
+    display: none;
+  }
+}

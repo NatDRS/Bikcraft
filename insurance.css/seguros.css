@@ -1,0 +1,46 @@
+.seguros-home-bg {
+  background-color: var(--c11);
+}
+
+.introducao-seguro {
+  padding-block: 3.75rem;
+}
+
+.introducao-seguro p {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--c5);
+}
+
+.seguro-titulo {
+  color: var(--w);
+}
+
+#seguros .introducao-seguro h1::before,
+#seguros .introducao-seguro h1::after {
+  position: absolute;
+  content: "";
+  width: 3.25rem;
+  height: 3.25rem;
+}
+#seguros .introducao-seguro h1::before {
+  background-image: url(/assets/dec/top-right.svg);
+  top: 7.5rem;
+  right: 4.75rem;
+}
+#seguros .introducao-seguro h1::after {
+  background-image: url(/assets/dec/bottom-left.svg);
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .introducao-seguro {
+    padding-block: 2.5rem;
+  }
+  .introducao-seguro p {
+    font-size: var(--s16);
+  }
+  .seguro-titulo {
+    font-size: 2.5rem;
+  }
+}

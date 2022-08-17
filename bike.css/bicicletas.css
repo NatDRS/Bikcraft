@@ -1,0 +1,197 @@
+.bikes {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  padding-block: 3.75rem;
+}
+
+.container-bikes img {
+  /* max-width: 35rem; */
+  /* height: 21.25rem; */
+  border-radius: 0.3125rem;
+}
+
+.container-bikes {
+  position: relative;
+}
+
+.preco::before {
+  background-color: var(--c12);
+  border-radius: 0.3125rem 0rem 0rem 0.3125rem;
+  content: "";
+  font: var(--medium) var(--s18) / 1.33 var(--tg2);
+  color: var(--w);
+  width: 91px;
+  height: 40px;
+  position: absolute;
+  right: 0rem;
+  top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nimbus::before {
+  content: "R$4999";
+}
+
+.magic::before {
+  content: "R$2999";
+}
+
+.nebula::before {
+  content: "R$3999";
+}
+
+.flex-bikes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+
+.escrita-bikes {
+  padding-left: 2.5rem;
+}
+
+.escrita-bikes h2 {
+  font: var(--semibold) var(--s36) / 1.11 var(--tg1);
+  color: var(--c11);
+  padding-block: 0.5rem 1.25rem;
+  position: relative;
+  align-content: start;
+}
+
+.escrita-bikes h2::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.5rem;
+  background-color: var(--p1);
+  position: absolute;
+  top: 0.125px;
+}
+
+.escrita-bikes h2::after {
+  content: "";
+  width: 3.25rem;
+  height: 3.25rem;
+  background-image: url(/assets/dec/top-right.svg);
+  position: absolute;
+  right: 0rem;
+}
+
+.escrita-bikes p {
+  font: var(--regular) var(--s18) / 1.33 var(--tg2);
+  color: var(--c8);
+  padding-block: 1.25rem 2rem;
+}
+
+.flex-bikes li {
+  font: var(--medium) var(--s18) / 1.33 var(--tg1);
+  color: var(--c8);
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.flex-bikes li span::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  left: -0.8rem;
+  margin-left: 0.5rem;
+}
+
+.flex-bikes li .i-motor::before {
+  background-image: url(/assets/icones/elétrico.svg);
+}
+
+.flex-bikes li .i-carbono::before {
+  background-image: url(/assets/icones/carbono.svg);
+  /* left: -0.3rem; */
+}
+
+.flex-bikes li .i-veloc::before {
+  background-image: url(/assets/icones/velocidade.svg);
+}
+
+.flex-bikes li .i-rastreador::before {
+  background-image: url(/assets/icones/rastreador.svg);
+  /* left: -0.3rem; */
+}
+
+.escrita-bikes a {
+  color: var(--p5);
+}
+
+/* .botao .bike {
+  position: relative;
+}
+
+.bike a {
+  position: absolute;
+  left: 23.125rem;
+}
+
+.detalhe-botao::after {
+  content: "";
+  background-image: url(/assets/icones/seta.svg);
+  width: 1.125rem;
+  height: 0.625rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: -1.8rem;
+} */
+
+.bikes-bg {
+  background: linear-gradient(to right, var(--w) 25%, var(--c12) 25%);
+}
+
+.magic-m h2 {
+  color: var(--w);
+}
+
+.magic-m p,
+.magic-m li {
+  color: var(--c5);
+}
+
+@media (max-width: 800px) {
+  .bikes-bg {
+    background: linear-gradient(var(--w) 30%, var(--c12) 30%);
+  }
+  .bikes {
+    grid-template-columns: 1fr;
+  }
+  .escrita-bikes {
+    padding-left: 0rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-bikes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-bikes ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flex-bikes li:nth-child(even) ::before {
+    margin-left: 0.3rem;
+    left: 11rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .bikes-bg {
+    background: linear-gradient(var(--w) 25%, var(--c12) 0%);
+  }
+  .flex-bikes li {
+    font-size: var(--s16);
+  }
+  .flex-bikes li:nth-child(even) ::before {
+    left: 10rem;
+  }
+}

@@ -1,0 +1,125 @@
+.introducao-home-bg {
+  background-color: var(--c12);
+  box-shadow: inset 0 -120px var(--w);
+}
+
+.introducao-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.escrita-introducao {
+  align-self: end;
+  padding-right: 2rem;
+  padding-block: 10rem 14rem;
+}
+
+.introducao-home .titulo {
+  color: var(--w);
+}
+
+.introducao-home .texto {
+  padding-block: 2rem 1.25rem;
+}
+
+.botao-home {
+  color: var(--p5);
+}
+
+.escrita-introducao h1 {
+  position: relative;
+}
+
+.container-foto-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3125rem;
+}
+
+.container-foto-home-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3125rem;
+  display: none;
+}
+
+.escrita-introducao span::before {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/dec/bottom-left.svg);
+  width: 3.25rem;
+  height: 3.25rem;
+  bottom: -19rem;
+  left: -5rem;
+}
+
+@media (max-width: 1200px) {
+  .escrita-introducao .titulo {
+    font-size: 3rem;
+  }
+  .escrita-introducao .texto {
+    font-size: var(--s18);
+    letter-spacing: 1.5px;
+  }
+
+  .escrita-introducao {
+    align-self: initial;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .escrita-introducao .titulo {
+    font-size: 2.62rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-home-bg {
+    background-color: var(--c11);
+    box-shadow: inset 0 -90px var(--w);
+  }
+
+  .introducao-home {
+    grid-template-columns: 1fr;
+  }
+  .escrita-introducao {
+    padding-bottom: 1rem;
+  }
+
+  .escrita-introducao .titulo {
+    font-size: var(--s32);
+  }
+
+  .escrita-introducao .texto {
+    font-size: var(--s16);
+    letter-spacing: 1.5px;
+  }
+  .botao-home {
+    max-width: 10rem;
+    max-height: 3rem;
+    font-size: var(--s14);
+  }
+
+  .container-foto-home {
+    display: none;
+  }
+
+  .container-foto-home-2 img {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao-home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-foto-home img {
+    display: none;
+  }
+}

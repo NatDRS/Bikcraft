@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--c12);
+  color: var(--c5);
+  padding-bottom: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
+  padding-block: 3.75rem 5rem;
+}
+
+.footer-opcoes {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--w);
+  padding-bottom: 2rem;
+  display: block;
+}
+
+.contact li,
+.contact li a {
+  font: var(--regular) var(--s18) / 1.77 var(--tg2);
+  color: var(--c5);
+  letter-spacing: 1.5px;
+}
+
+.info li a {
+  font: var(--medium) var(--s18) / 2 var(--tg1);
+  letter-spacing: 1.5px;
+  color: var(--c5);
+}
+
+.contact li:nth-child(2n + 2) {
+  padding-bottom: 2rem;
+}
+
+.footer-detalhe {
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 0.125rem;
+  background-color: var(--c11);
+  top: 9rem;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 0.125rem;
+  background-color: var(--c11);
+  top: 14.5rem;
+}
+
+.footer .redes {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer .direitos {
+  font: var(--regular) var(--s18) / 1.77 var(--tg2);
+  letter-spacing: 1.5px;
+  color: var(--c6);
+}
+
+.contact li a:hover,
+.info li a:hover {
+  color: var(--c1);
+}
+
+@media (max-width: 900px) {
+  .contact::before,
+  .contact::after {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-detalhe {
+    padding-bottom: 2rem;
+  }
+
+  .contact li,
+  .contact li a {
+    font-size: var(--s18);
+  }
+}

@@ -1,0 +1,109 @@
+.vantagens-insurance-bg {
+  background-color: var(--c12);
+}
+
+.vantagens-insurance {
+  padding-block: 5rem 3rem;
+  position: relative;
+}
+
+.vantagens-insurance h2 {
+  color: var(--w);
+  padding-bottom: 5.75rem;
+}
+
+.vantagens-insurance h2::before,
+.vantagens-insurance h2::after {
+  position: absolute;
+  content: "";
+  width: 3.25rem;
+  height: 3.25rem;
+  bottom: 1rem;
+}
+
+.vantagens-insurance h2::before {
+  background-image: url(/assets/dec/bottom-left.svg);
+  left: -3.2rem;
+}
+
+.vantagens-insurance h2::after {
+  background-image: url(/assets/dec/bottom-right.svg);
+  right: 1.5rem;
+}
+
+.insurance-grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+}
+
+.insurance-grid1 div {
+  padding: 0rem 3rem 4.5rem 1rem;
+  position: relative;
+}
+
+/* .insurance-grid1 div:nth-last-child(n + 4) {
+  padding-bottom: 4.5rem;
+  background-color: orange;
+} */
+
+.insurance-grid1 h3 {
+  font: var(--semibold) var(--s24) / 1.33 var(--tg1);
+  color: var(--w);
+  padding-block: 0.5rem;
+}
+
+.insurance-grid1 h3::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  top: -1.8rem;
+}
+
+.insurance-eletrico::before {
+  background-image: url(/assets/icones/elétrico.svg);
+}
+
+.insurance-carbono::before {
+  background-image: url(/assets/icones/carbono.svg);
+}
+
+.insurance-sustentavel::before {
+  background-image: url(/assets/icones/sustentável.svg);
+}
+
+.insurance-rastreador::before {
+  background-image: url(/assets/icones/rastreador.svg);
+}
+
+.insurance-seguranca::before {
+  background-image: url(/assets/icones/segurança.svg);
+}
+
+.insurance-rapidez::before {
+  background-image: url(/assets/icones/velocidade.svg);
+}
+
+.insurance-grid1 p {
+  font: var(--regular) var(--s18) / 1.33 var(--tg2);
+  color: var(--c6);
+}
+
+@media (max-width: 800px) {
+  .vantagens-insurance {
+    padding-block: 2.5rem;
+  }
+  .vantagens-insurance h2 {
+    font-size: 2.5rem;
+  }
+  .insurance-grid1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .insurance-grid1 {
+    grid-template-columns: 1fr;
+  }
+}

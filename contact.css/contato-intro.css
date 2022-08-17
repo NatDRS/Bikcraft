@@ -1,0 +1,225 @@
+.contato-bg {
+  background: linear-gradient(var(--c11) 600px, var(--c1) 0px);
+}
+
+.contato-intro {
+  position: relative;
+}
+
+.contato-intro p {
+  font: var(--medium) var(--s24) / 1.33 var(--tg2);
+  color: var(--c5);
+  padding-block: 3.75rem 0.5rem;
+}
+
+.contato-intro .titulo {
+  color: var(--w);
+  padding-bottom: 3.75rem;
+}
+
+.contato-info {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-adress,
+.contato-comunic {
+  box-shadow: var(--sombra);
+}
+
+.contato-adress {
+  background-color: var(--c12);
+  color: var(--c4);
+  padding-left: 3.75rem;
+  padding-right: 0.75rem;
+  padding-top: 3.75rem;
+  border-radius: 0.3125rem 0rem 0rem 0.3125rem;
+  position: relative;
+}
+
+.contato-adress h2 {
+  font: var(--semibold) var(--s16) / 1.5 var(--tg1);
+  color: var(--w);
+  display: block;
+  padding-bottom: 3.75rem;
+}
+
+.contato-adress li,
+.contato-adress a {
+  font: var(--regular) var(--s16) / 1.5 var(--tg2);
+  color: var(--c4);
+  display: block;
+  padding-left: 1.75rem;
+}
+
+.contato-adress a {
+  max-width: max-content;
+}
+.contato-adress a:hover {
+  color: var(--w);
+}
+
+.contato-meios {
+  padding-top: 2rem;
+}
+
+.contato-meios a:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.localizacao-amarelo {
+  background: url(/assets/icones/localizacao-amarelo.svg) no-repeat 0px 2px;
+}
+
+.mensagem-amarelo {
+  background: url(/assets/icones/mensagem-amarelo.svg) no-repeat 0 2px;
+}
+
+.telefone-amarelo {
+  background: url(/assets/icones/telefone-amarelo.svg) no-repeat 0 2px;
+}
+
+.contato-redes-flex {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-top: 3.75rem;
+}
+.contact-flex1 div {
+  width: 100%;
+}
+
+.contato-redes-flex img {
+  min-width: 2rem;
+}
+
+.contato-comunic {
+  background-color: var(--w);
+  padding-block: 3.75rem 2.5rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  border-radius: 0rem 0.3125rem 0.3125rem 0rem;
+}
+
+.contato-comunic a {
+  color: var(--p5);
+}
+
+.contact-flex1 {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.contact-caixa {
+  margin-top: 1.25rem;
+}
+
+.contato-comunic label {
+  display: block;
+  font: var(--medium) var(--s16) / 1.5 var(--tg1);
+  color: var(--c11);
+}
+
+.contato-comunic input[type="text"],
+.contato-comunic input[type="email"],
+.contato-comunic textarea {
+  font: var(--regular) var(--s16) / 1.5 var(--tg2);
+  color: var(--c7);
+  background-color: var(--c2);
+  padding: 0.75rem;
+  border: 1px solid var(--c3);
+  border-radius: 0.3125rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contato-comunic input[type="text"]:focus,
+.contato-comunic input[type="email"]:focus,
+.contato-comunic textarea:focus {
+  outline: none;
+  border-color: var(--p1);
+  background: var(--w);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.contato-intro h1::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/dec/top-right.svg);
+  height: 3.25rem;
+  width: 3.25rem;
+  right: 0rem;
+  top: 3.75rem;
+  margin-right: 1rem;
+}
+
+.contato-intro h1::after {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/dec/bottom-right.svg);
+  height: 3.25rem;
+  width: 3.25rem;
+  right: 2.5rem;
+  bottom: -33.5rem;
+  top: 44.8rem;
+  z-index: 1;
+}
+
+.contato-adress h2::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/dec/top-right.svg);
+  width: 3.25rem;
+  height: 3.25rem;
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .contato-info {
+    grid-template-columns: 1fr;
+  }
+  .contato-redes-flex {
+    justify-content: start;
+    margin-right: 1rem;
+    margin-bottom: 3.75rem;
+  }
+  .contato-adress {
+    border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+  }
+  .contato-comunic {
+    border-radius: 0rem 0rem 0.3125rem 0.3125rem;
+  }
+  .contato-adress h2::before {
+    display: none;
+  }
+  .contato-intro h1::after {
+    top: 41.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contato-intro h1 {
+    font-size: 2.5rem;
+  }
+  .contato-intro p {
+    font-size: var(--s16);
+  }
+}
+
+@media (max-width: 700px) {
+  .contato-adress,
+  .contato-comunic {
+    padding-left: 2rem;
+  }
+  .contact-flex1 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  .contato-intro h1::after {
+    display: none;
+  }
+}

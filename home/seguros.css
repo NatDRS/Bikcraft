@@ -1,0 +1,117 @@
+.seguros-home-bg {
+  background-color: var(--c11);
+  position: relative;
+}
+
+.seguros-home h2 {
+  color: var(--w);
+  padding-block: 3.75rem;
+}
+
+.grid-seguros-home {
+  /* display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  padding-bottom: 7.5rem;
+}
+
+.container-seguros-home {
+  background-color: var(--c12);
+  font: var(--medium) var(--s18) / 1.33 var(--tg2);
+  color: var(--w);
+  border-radius: 0.3125rem;
+  max-width: 32rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-inline: 4rem 2rem;
+  padding-block: 2rem;
+}
+
+.seguros-home .c1 {
+  max-height: 24.75rem;
+}
+
+.container-seguros-home .prata {
+  font: var(--semibold) var(--s36) / 1.33 var(--tg1);
+  color: var(--c6);
+  padding-bottom: 2.5rem;
+}
+
+.container-seguros-home .silver a {
+  color: var(--w);
+}
+
+.container-seguros-home .ouro {
+  font: var(--semibold) var(--s36) / 1.33 var(--tg1);
+  color: var(--p1);
+  padding-bottom: 2.5rem;
+}
+
+.container-seguros-home .golden a {
+  color: var(--p5);
+}
+
+.container-seguros-home .investimento {
+  font: var(--semibold) var(--s12) / 1.33 var(--tg1);
+  color: var(--c6);
+}
+
+.container-seguros-home .investimento {
+  text-align: right;
+}
+
+.container-seguros-home .valor-seguros {
+  font: var(--semibold) var(--s36) / 1.33 var(--tg1);
+  color: var(--w);
+  display: block;
+}
+
+.container-seguros-home .botao-seguros,
+.container-seguros-home .golden {
+  margin-top: 0.75rem;
+}
+
+.container-seguros-home li:nth-child(n + 2) {
+  padding-bottom: 1.25rem;
+}
+
+.container-seguros-home .lista-detalhe {
+  padding-bottom: 1.25rem;
+}
+
+.container-seguros-home li {
+  position: relative;
+}
+
+.container-seguros-home .lista-detalhe::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/icones/lista.svg);
+  height: 0.5625rem;
+  width: 0.8125rem;
+  left: -1.2rem;
+  top: 0.5rem;
+}
+
+.seguros-home h2::before {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/dec/bottom-left.svg);
+  width: 3.25rem;
+  height: 3.25rem;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid-seguros-home {
+    flex-direction: column;
+  }
+
+  .seguros-home h2 {
+    font-size: var(--s32);
+  }
+}

@@ -1,0 +1,29 @@
+.termos-terms {
+  padding-block: 4.5rem;
+}
+
+.termos-terms .terms-subtitulo {
+  font: var(--semibold) var(--s24) / 1.33 var(--tg1);
+  color: var(--c11);
+  padding-bottom: 1.25rem;
+}
+
+.termos-terms .terms-rules {
+  font: var(--regular) var(--s18) / 1.33 var(--tg2);
+  color: var(--c10);
+  max-width: 75ch;
+}
+
+.termos-terms .terms-rules li:nth-child(2n + 2) {
+  padding-block: 1rem;
+}
+
+.termos-terms div:nth-last-child(n + 2) {
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 800px) {
+  .termos-terms {
+    padding-block: 2.5rem;
+  }
+}
